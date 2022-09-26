@@ -13,6 +13,11 @@ const routes = [{
         name: "registro",
         component: Registro
     }
+    {
+        path: '/consultar/pacientes',
+        name: "consultaPacientes",
+        component: ConsultaPacientes
+    }
 ]
 
 const router = createRouter({

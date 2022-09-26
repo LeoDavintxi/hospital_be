@@ -1,30 +1,6 @@
 <template>
     <section id="pantalla-dividida">
         <div class="izquierda">
-            <div class="logIn_user">
-                <div class="contenido_logIn_user">
-                    <img class="logo" src="http://drive.google.com/uc?export=view&id=10esmGfVLdrKg-d_xsGhXBzy8gJpYleUX">
-                    <h2>Registros de Usuarios</h2>
-                    <form class="forma" v-on:submit.prevent="registroUsuario">
-                        <input type="text" v-model="usuario.nombre" placeholder="Nombre"><br>
-                        <input type="text" v-model="usuario.apellido" placeholder="Apellido"><br>
-                        <input type="text" v-model="usuario.direccion" placeholder="Direccion"><br>
-                        <input type="text" v-model="usuario.correo" placeholder="Correo"><br>
-                        <input type="text" v-model="usuario.user_name" placeholder="Username"><br>
-                        <input type="password" v-model="usuario.password" placeholder="Password"><br>
-                        <select v-model="usuario.id_rol" placeholder="Rol">
-                            <option value="">Seleccione el rol del Usuario...</option>
-                            <option value="1">Administrador</option>
-                            <option value="2">Paciente</option>
-                            <option value="3">Medico</option>
-                            <option value="4">Enfermero</option>
-                            <option value="4">Familiar</option>
-                        </select><br><br>
-                        <button type="submit">Registrarse</button>
-                    </form>
-                    <h5>Mintic Equipo 4<br>Todos los derechos reservados - 2022</h5>
-                </div>
-            </div>
         </div>
         <div class="derecha">
         </div>
@@ -34,7 +10,7 @@
 <script>
 import axios from 'axios';
 export default {
-    name: 'registro',
+    name: 'consultaPacientes',
 
     data: function () {
         return {
